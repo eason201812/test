@@ -12,12 +12,12 @@ function doPost(e) {
     return;
   }  
   
-  var returnText;
-  
+  var returnText = msg.events[0];
+  /*
   msg.events[0].forEach(function(x){
     returnText = returnText + x + ",";  
   })
-  
+  */
   var url = 'https://api.line.me/v2/bot/message/reply';
   UrlFetchApp.fetch(url, {
       'headers': {

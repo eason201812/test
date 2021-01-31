@@ -12,10 +12,10 @@ function doPost(e) {
     return;
   }  
   
-  var returnText = userMessage;
+  var returnText = "";
  
   for(let x in msg.events[0]){
-    returnText = returnText + x + msg.events[0][x] + "\n";
+    returnText = returnText + x + ":" + msg.events[0][x] + "\n";
   }
   
   var url = 'https://api.line.me/v2/bot/message/reply';

@@ -12,7 +12,7 @@ function doPost(e) {
     return;
   }  
   
-  var returnText = typeof(msg.events);
+  var returnText = typeof(msg.events[0]);
   //returnText += typeof(msg.events);
   /*
   for(let x in msg.events[0]){

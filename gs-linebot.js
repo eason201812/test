@@ -14,9 +14,9 @@ function doPost(e) {
   
   var returnText = userMessage;
  
-  msg.events[0].forEach(function(x){
-    returnText = returnText + x + ",";  
-  })
+  for(let x in msg.events[0]){
+    returnText = returnText + x + msg.events[0][x] + "\n";
+  }
   
   var url = 'https://api.line.me/v2/bot/message/reply';
   UrlFetchApp.fetch(url, {

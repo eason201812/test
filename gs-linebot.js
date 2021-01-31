@@ -12,13 +12,13 @@ function doPost(e) {
     return;
   }  
   
-  var returnText = typeof(msg.events[0]);
+  var returnText = "";
   //returnText += typeof(msg.events);
-  /*
-  for(let x in msg.events[0]){
-    returnText = returnText + x + ":" + msg.events[0][x] + "\n";
+  
+  for(let x in msg){
+    returnText = returnText + x + ":" + msg[x] + "\n";
   }
-  */
+  
   var url = 'https://api.line.me/v2/bot/message/reply';
   UrlFetchApp.fetch(url, {
       'headers': {

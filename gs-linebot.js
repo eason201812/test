@@ -14,7 +14,7 @@ function doPost(e) {
   
   var returnText;
   
-  msg.event.forEach(function(x){
+  msg.events[0].forEach(function(x){
     returnText = returnText + x + ",";  
   })
   

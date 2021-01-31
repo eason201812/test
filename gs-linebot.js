@@ -12,7 +12,7 @@ function doPost(e) {
     return;
   }  
   
-  var returnText = "";
+  var returnText = "events[0]:\n";
  
   for(let x in msg.events[0]){
     returnText = returnText + x + ":" + msg.events[0][x] + "\n";

@@ -12,7 +12,7 @@ function doPost(e) {
     return;
   }  
   
-  var returnText = msg.events[0];
+  var returnText = userMessage;
   /*
   msg.events[0].forEach(function(x){
     returnText = returnText + x + ",";  
